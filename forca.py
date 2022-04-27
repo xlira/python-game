@@ -11,6 +11,7 @@ def jogar():
     forcou = False
 
     while ( not acertou and not forcou):
+
         print("Jogando...")
 
 if(__name__ == "__main__"):
