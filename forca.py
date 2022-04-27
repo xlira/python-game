@@ -6,5 +6,12 @@ def jogar():
 
     print("Jogo da Forca.")
 
+    palavra = 'banana'
+    acertou = False
+    forcou = False
+
+    while ( not acertou and not forcou):
+        print("Jogando...")
+
 if(__name__ == "__main__"):
     jogar()
