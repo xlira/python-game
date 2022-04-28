@@ -12,7 +12,15 @@ def jogar():
 
     while ( not acertou and not forcou):
 
-        print("Jogando...")
+        chute = input("Qual a letra?")
+
+        index = 0
+        for letra in palavra:
+            if (chute == letra):
+                print("Encontrei a letra {} na posição {}.".format(letra, index))
+            index = index + 1
+
+
 
 if(__name__ == "__main__"):
     jogar()
