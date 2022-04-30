@@ -13,10 +13,11 @@ def jogar():
     while ( not acertou and not forcou):
 
         chute = input("Qual a letra?")
+        chute = chute.strip()
 
         index = 0
         for letra in palavra:
-            if (chute == letra):
+            if (chute.upper() == letra.upper()):
                 print("Encontrei a letra {} na posição {}.".format(letra, index))
             index = index + 1
 
